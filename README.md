@@ -1,1 +1,1 @@
-# tailwind_html_boilerplate-
+# To start a small project
