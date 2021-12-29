@@ -4,14 +4,10 @@
   "repository": "git@github.com:neuroplasticity9/tailwind_html_boilerplate.git",
   "author": "KOTOC",
   "license": "MIT",
-  "source": "src/index.html",
-  "main": "dist/index.html",
   "scripts": {
     "dev": "npm-run-all --parallel 'w:*'",
-    "prod2":"parcel build src/index.html --no-source-maps --no-cache",
-    "prod":"parcel build",
-    "w2:start": "parcel serve src/index.html",
-    "w:start": "parcel",
+    "prod":"parcel build src/index.html --no-source-maps --no-cache",
+    "w:start": "parcel serve src/index.html",
     "w:css": "tailwindcss -i src/css.css -o src/main.css -w"
   },
   "devDependencies": {
