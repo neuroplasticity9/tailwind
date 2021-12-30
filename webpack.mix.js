@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,6 +14,21 @@ const tailwindcss = require('tailwindcss');
  */
 
 
+ mix.webpackConfig({
+   plugins: [
+       new BrowserSyncPlugin({
+           files: [
+               'src/**/*',
+           ]
+       })
+   ]
+});
+
+
+
+
+
+
 /*
  |--------------------------------------------------------------------------
  | Website
@@ -24,5 +40,5 @@ mix
    .sass('./src/app.scss', './assets/css/main.css')
    .options({
       postCss: [tailwindcss('./tailwind.config.js')],
-   });
-mix.copy('./src/app.html', './index.html');
+   })
+   .copy('./src/app.html', './index.html');

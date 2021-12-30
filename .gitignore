@@ -26,3 +26,4 @@ yarn.lock
 dist
 package-lock.json
 mix-manifest.json
+hot
