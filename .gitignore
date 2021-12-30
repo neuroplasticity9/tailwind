@@ -24,6 +24,7 @@ Homestead.json
 yarn.lock
 .parcel-cache
 dist
+dist/*
 package-lock.json
 mix-manifest.json
 hot
