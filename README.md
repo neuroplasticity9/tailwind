@@ -1,6 +1,6 @@
 # To start a small project
 
-Run `npm install' or `yarn` to setup project
+Run `npm install` or `yarn` to setup project
 
 Run `npm run hot` or `yarn hot` to watch and live preview
 
