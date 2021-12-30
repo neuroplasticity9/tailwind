@@ -14,18 +14,18 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
  */
 
 
- mix.webpackConfig({
-   plugins: [
-       new BrowserSyncPlugin({
-           files: [
-               'src/**/*',
-           ]
-       })
-   ]
+mix.webpackConfig({
+    plugins: [
+        new BrowserSyncPlugin({
+            files: [
+                'src/**/*',
+            ]
+        })
+    ],
+    devServer: {
+        port: '9090'
+    },
 });
-
-
-
 
 
 
@@ -36,9 +36,9 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
  */
 
 mix
-   .js('./src/app.js', './assets/js/main.js')
-   .sass('./src/app.scss', './assets/css/main.css')
-   .options({
-      postCss: [tailwindcss('./tailwind.config.js')],
-   })
-   .copy('./src/app.html', './index.html');
+    .js('./src/app.js', './assets/js/main.js')
+    .sass('./src/app.scss', './assets/css/main.css')
+    .options({
+        postCss: [tailwindcss('./tailwind.config.js')],
+    })
+    .copy('./src/app.html', './index.html');
