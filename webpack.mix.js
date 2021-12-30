@@ -36,11 +36,9 @@ mix.webpackConfig({
  */
 
 mix
-    .js('./src/app.js', './assets/main.js')
-    .sass('./src/app.scss', './assets/main.css')
+    .js('./src/app.js', './docs/assets/main.js')
+    .sass('./src/app.scss', './docs/assets/main.css')
     .options({
         postCss: [tailwindcss('./tailwind.config.js')],
     })
-    .copy('./src/app.html', './index.html')
-    .copyDirectory('./assets/', './dist/assets/')
-    .copy('./src/app.html', './dist/index.html');
+    .copy('./src/app.html', './docs/index.html');
