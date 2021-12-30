@@ -23,6 +23,7 @@ Homestead.json
 .phpunit.result.cache
 yarn.lock
 .parcel-cache
+dist
 package-lock.json
 mix-manifest.json
 hot
