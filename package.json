@@ -4,6 +4,7 @@
   "repository": "git@github.com:neuroplasticity9/tailwind_html_boilerplate.git",
   "author": "KOTOC",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "npm run development",
     "development": "mix",

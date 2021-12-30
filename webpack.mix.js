@@ -25,4 +25,4 @@ mix
    .options({
       postCss: [tailwindcss('./tailwind.config.js')],
    });
-mix.copy('./src/index.html', './index.html');
+mix.copy('./src/app.html', './index.html');
