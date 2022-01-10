@@ -782,3 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
  | Website
  |--------------------------------------------------------------------------
 */
+body {
+  font-size: 12px;
+}
