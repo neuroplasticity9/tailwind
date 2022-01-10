@@ -23,6 +23,10 @@ mix.webpackConfig({
             host: 'localhost',
             port: 3000,
             // proxy: 'https://localhost:5500'
+            server: {
+                baseDir: "docs/",
+                index: "index.html"
+            }
         })
     ],
 });
