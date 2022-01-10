@@ -6,6 +6,4 @@ Run `npm run watch` or `yarn watch` to watch and live preview
 
 Run `npm run prod` or `yarn prod` to build production
 
-Open your browser file html or use live preivew on Vscode to view
-
-Edit your code, site will be auto reload
+Edit your code html, css or scss, site will be auto reload
