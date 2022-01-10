@@ -36,8 +36,8 @@ mix.webpackConfig({
  */
 
 mix
-    .js('./src/app.js', './docs/main.js')
-    .sass('./src/app.scss', './docs/main.css')
+    .js('./src/app.js', './docs/js/main.js')
+    .sass('./src/app.scss', './docs/css/main.css')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
